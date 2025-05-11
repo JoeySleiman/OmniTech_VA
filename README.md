@@ -6,9 +6,11 @@ run: pip install pyttsx3 SpeechRecognition python-dotenv google-generativeai goo
 
 The Speech_to_text, VO, and agent are used for the voice over capabilty and work based on the following APIs:
 - Gemini
+  
 The gmail_tasks reads gmail emails and uses reasoning to extract events from the emails using the following APIs:
 - Gemini
 - Gmail API
+  
 The scheduler creates events and tasks from the outputs of the previous two, and opens the necessary appliction and files using reasoning from the event names using the following APIs:
 - Cohere
 - Google Calender

@@ -35,7 +35,7 @@ def save_tasks():
 # Append new tasks from voice and Gmail
 async def update_task_queue():
     new_tasks = []
-    new_tasks += run_voice_task_capture()  # [{title, description, duration, deadline}]
+    new_tasks += await run_voice_task_capture()  # [{title, description, duration, deadline}]
     new_tasks += fetch_tasks_from_email()
     for task in new_tasks:
         if task and task not in TASK_QUEUE:

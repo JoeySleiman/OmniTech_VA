@@ -5,7 +5,7 @@ def record_and_transcribe():
     with sr.Microphone() as source:
         print("Speak something... (say 'stop' to exit)")
         try:
-            audio = recognizer.listen(source, timeout=3, phrase_time_limit=5)
+            audio = recognizer.listen(source, timeout=3, phrase_time_limit=10)
         except sr.WaitTimeoutError:
             return "NO_INPUT"
 

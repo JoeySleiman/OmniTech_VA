@@ -12,7 +12,7 @@ Developed as part of the **2025 GDG Hackathon – HCI Track**
 1. **Install dependencies**:
 
 ```bash
-pip install pyttsx3 SpeechRecognition python-dotenv google-generativeai google-adk pyaudio setuptools google-auth google-auth-oauthlib google-api-python-client cohere
+pip install pyttsx3 SpeechRecognition python-dotenv google-generativeai google-adk pyaudio setuptools google-auth google-auth-oauthlib google-api-python-client cohere pytz
 ```
 
 2. **Run the assistant**:

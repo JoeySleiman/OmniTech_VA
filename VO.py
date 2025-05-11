@@ -24,7 +24,7 @@ def save_task_to_json(text):
     with open(TASKS_FILE, "w") as f:
         json.dump(tasks, f, indent=2)
 
-def run_voice_task_capture():
+async def run_voice_task_capture():
     user_id = "user1"
     session_id = "session1"
     ensure_session(user_id, session_id)
@@ -35,7 +35,7 @@ def run_voice_task_capture():
         return []
 
     print(f"You said: {spoken_text}")
-    response = asyncio.run(get_agent_reply(spoken_text, user_id, session_id))
+    response = await get_agent_reply(spoken_text, user_id, session_id)
 
     try:
         tasks = json.loads(response)
